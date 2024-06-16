@@ -3,15 +3,15 @@
 ![MineBBS -QQ图片20240223073235](https://github.com/AntiAttackMC/AATRL_Public/assets/141195321/a132cebe-2a95-4344-868a-955a4c81a78b)
 **AntiAttackRL**是一款免费、可靠、更新频繁、多平台的压测防御插件，可以有效地防御绝大多数的压测攻击，并且服务器被压测时玩家依然能够正常进服，同时也是唯一一款支持 Sponge 、 Folia 和ShreddedPaper 的反压测插件。
 ## Dev-V425更新内容
-以下更新标识含义:
-+:新增
--:移除
-X:Bug修复
-*:重要修改
-~:代码优化/变动
-|+|支持了ShreddedPaper服务端
-|X|修复了控制台染色功能
-|~|更改了前置插件为PacketEvents
+以下更新标识含义: <br>
++:新增<br>
+-:移除<br>
+X:Bug修复<br>
+*:重要修改<br>
+\~:代码优化/变动<br>
+[+] 支持了ShreddedPaper服务端<br>
+[X] 修复了控制台染色功能<br>
+[~] 更改了前置插件为PacketEvents<br>
 ### 特性
 * 防御MOTD 压测 / MOTD 集群压测
 * 防御Ping 压测 / Ping 集群压测
