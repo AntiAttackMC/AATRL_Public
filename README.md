@@ -156,3 +156,8 @@ packetTrack (*/玩家) 包追踪所有/限定
 
 权限只有一个：AntiAttack.admin
 # Download & Issues
+如下报错为正常现象，作者表示网络问题无需修复，请不要提交问题
+```
+[ERROR] Failed to check for updates. javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+
+```
