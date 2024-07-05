@@ -60,11 +60,11 @@
 本插件在任何服务端 _(Bukkit/Spigot/Paper/KCauldron/CarServer/Mohist/Bungee/Sponge)_ 下运行时，
 其配置文件格式均相同，格式为Yaml。在同版本插件下各个选项也完全相同，文件位置可能不同。
 配置文件位置:
-Bukkit/Spigot: `plugins/AntiAttackRL/config.yml`
-BungeeCord: `plugins/AntiAttackRL/config.yml`
-Sponge7: `config/anti_attack_reload/config.yml`
-Sponge8: `config/AntiAttackRL/config.yml`
-Velocity: `plugins/anti_attack_reload/config.yml`
+Bukkit/Spigot: `plugins/AntiAttackRL/config.yml` <br>
+BungeeCord: `plugins/AntiAttackRL/config.yml` <br>
+Sponge7: `config/anti_attack_reload/config.yml` <br>
+Sponge8: `config/AntiAttackRL/config.yml` <br>
+Velocity: `plugins/anti_attack_reload/config.yml` <br>
 ```yaml
 AntiAttack:
   AutoUpdate: false  #自动更新
