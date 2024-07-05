@@ -49,7 +49,7 @@
 2. 先将其置入你的任一**非登录服**中的`plugins`文件夹中
 3. 重启这个子服，等待初始化结束
 4. 将位于该子服`plugins`中的`AntiAttackRL.jar`和`AntiAttack文件夹`一起挪到**Proxy端**的`plugins`里
-5. 重启BC即呵生效
+5. 重启服务端即可生效
 6. 若效果不好，请查阅下方的配置文件讲解对配置文件进行修改
 ### Sponge安装方法
 1. 下载插件: `AntiAttackRL-[版本号].jar`
