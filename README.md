@@ -147,6 +147,7 @@ packetTrack (*/玩家) 包追踪所有/限定
 权限只有一个：AntiAttack.admin
 # Download & Issues
 [Releases](https://github.com/AntiAttackMC/AATRL_Public/releases)
+<br>
 > [!WARNING]
-> 如果在更新检测时遇到了类似`javax.net.ssl.SSLHandshakeException`的错误，是你网络不好连不上GitHub
+> 如果在更新检测时遇到了类似`javax.net.ssl.SSLHandshakeException`的错误，是你网络不好连不上GitHub <br>
 > **不要给我开issue或反馈，一概关闭/拒收！**
