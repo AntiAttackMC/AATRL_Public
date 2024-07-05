@@ -1,6 +1,6 @@
-**若果你有任何疑问或提交bug，请发送Issues或到Q群580659670寻求帮助**
+***如果你有任何疑问或提交bug，请发送Issues或到Q群580659670寻求帮助***
 # AntiAttackRL插件介绍
-![MineBBS -QQ图片20240223073235](https://github.com/AntiAttackMC/AATRL_Public/assets/141195321/a132cebe-2a95-4344-868a-955a4c81a78b)
+![LOGO](https://github.com/AntiAttackMC/AATRL_Public/assets/141195321/a132cebe-2a95-4344-868a-955a4c81a78b)
 **AntiAttackRL**是一款免费、可靠、更新频繁、多平台的压测防御插件，可以有效地防御绝大多数的压测攻击，并且服务器被压测时玩家依然能够正常进服，同时也是唯一一款支持 Sponge 、 Folia 和ShreddedPaper 的反压测插件。
 ## Dev-V425更新内容
 以下更新标识含义: <br>
@@ -9,9 +9,10 @@
 X:Bug修复<br>
 *:重要修改<br>
 \~:代码优化/变动<br>
-[+] 支持了ShreddedPaper服务端<br>
+<br>
+<br>
 [X] 修复了控制台染色功能<br>
-[~] 更改了前置插件为PacketEvents<br>
+[*] 更改了前置插件为PacketEvents<br>
 ### 特性
 * 防御MOTD 压测 / MOTD 集群压测
 * 防御Ping 压测 / Ping 集群压测
@@ -144,7 +145,7 @@ ServerInLimitTime:   #大厅踢出
 Versioning: 425    #插件版本号
 ```
 ### 指令
-**/aat** 主指令
+**/aat** 主命令
 help 查询插件帮助
 reload 重载插件
 rm 戒备模式手动操作
@@ -156,8 +157,4 @@ packetTrack (*/玩家) 包追踪所有/限定
 
 权限只有一个：AntiAttack.admin
 # Download & Issues
-如下报错为正常现象，作者表示网络问题无需修复，请不要提交问题
-```
-[ERROR] Failed to check for updates. javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-
-```
+[Releases](https://github.com/AntiAttackMC/AATRL_Public/releases)
