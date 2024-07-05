@@ -3,11 +3,11 @@
 ![LOGO](https://github.com/AntiAttackMC/AATRL_Public/assets/141195321/a132cebe-2a95-4344-868a-955a4c81a78b)
 **AntiAttackRL**是一款免费、可靠、更新频繁、多平台的压测防御插件，可以有效地防御绝大多数的压测攻击，并且服务器被压测时玩家依然能够正常进服，同时也是唯一一款支持 Sponge 、 Folia 和ShreddedPaper 的反压测插件。
 ## 特性
-* 防御MOTD 压测 / MOTD 集群压测
-* 防御Ping 压测 / Ping 集群压测
-* 防御假人压测 / 集群假人压测
-* 防御Tab 包高频攻击
-* 防御Move 包高频攻击
+* 防御 MOTD _(集群)_ 压测
+* 防御 Ping _(集群)_ 压测
+* 防御 假人 _(集群)_ 压测
+* 防御 Tab 包高频攻击
+* 防御 Move 包高频攻击
 * 防御连点器发包崩溃漏洞
 * 防御踢人漏洞压测攻击
 * 防御频繁握手多连接攻击
@@ -32,36 +32,39 @@
 6. 更强的自定义，几乎所有玩家提示信息都可以自定义了，插件前缀也可以自定义了，所有数值都可以手动调整
 7. 针对和高效的更新，几乎可以抵抗最新的压测，并配有一劳永逸的自动更新系统*。
 ## 首次安装教程（必看）
-### Bukkit / Spigot纯净服安装方法
-1. 确保装有前置: Protocolib
-2. 下载好插件: AntiAttackRL-[版本号].jar
-3. 将插件置入plugins文件夹中
+### 实现BukkitAPI的服务端 _(包括Spigot及其分支、各类Hybrid混合服务端、Folia、ShreddedPaper等)_ 安装方法
+1. 确保装有前置: `ProtocoLib`
+2. 下载好插件: `AntiAttackRL-[版本号].jar`
+3. 将插件置入`plugins`文件夹中
 4. 重启时，服务器可能会进行初始化，玩家数据越多，时间越长
 5. 若效果不好，请查阅下方的配置文件讲解对配置文件进行修改
-### BungeeCord蹦极服安装方法
+### Proxy代理端 _(如BungeeCord、Velocity)_ 及其分支 _(如WaterFall等)_ 安装方法
 **若你的服务器未处于被攻击时:**
-1. 下载插件: AntiAttackRL-[版本号].jar
-2. 将其置入BC中的plugins文件夹中
-3. 重启BC即可生效
+1. 下载插件: `AntiAttackRL-[版本号].jar`
+2. 将其置入Proxy端中的`plugins`文件夹中
+3. 重启服务端即可生效
 4. 若效果不好，请查阅下方的配置文件讲解对配置文件进行修改
-**若你的服务器正处于被攻击时:**
-1. 下载插件: AntiAttackRL-[版本号].jar
-2. 先将其置入你的登录服中的plugins文件夹中
-3. 重启你的登录服，等待初始化结束
-4. 将位于登录服plugins中的AntiAttackRLjar和AntiAttack文件夹一起挪到BC的plugins里5.重启BC即呵生效
+**若你的Proxy服务端正处于被攻击时:**
+1. 下载插件: `AntiAttackRL-[版本号].jar`
+2. 先将其置入你的任一**非登录服**中的`plugins`文件夹中
+3. 重启这个子服，等待初始化结束
+4. 将位于该子服`plugins`中的`AntiAttackRL.jar`和`AntiAttack文件夹`一起挪到**Proxy端**的`plugins`里
+5. 重启BC即呵生效
 6. 若效果不好，请查阅下方的配置文件讲解对配置文件进行修改
-### Sponge纯净/模组服安装方法
-1. 下载插件: AntiAttackRL-[版本号].jar
-2. 将其置入服务端的mods或mods\1.12.2或mods\plugins文件夹中
+### Sponge安装方法
+1. 下载插件: `AntiAttackRL-[版本号].jar`
+2. 将其置入服务端的`mods`文件夹中
 3. 重启服务端，重启时插件可能会进行初始化，玩家数据越多,时间越长
 4. 若效果不好，请查阅下方的配置文件讲解对配置文件进行修改
 ## 配置文件
-本插件在任何服务端(Bukkit/Spigot/Paper/KCauldron/CarServer/Mohist/Bungee/Sponge)下运行时，
+本插件在任何服务端 _(Bukkit/Spigot/Paper/KCauldron/CarServer/Mohist/Bungee/Sponge)_ 下运行时，
 其配置文件格式均相同，格式为Yaml。在同版本插件下各个选项也完全相同，文件位置可能不同。
-配置文件位置:（老版本为AntiAttackRL/AntiAttack文件夹）
-Bukkit/Spigot: plugins/anti_attack_reloadL/config.yml
-BungeeCord: plugins/anti_attack_reload/config.yml
-Sponge: config/anti_attack_reload/config.yml
+配置文件位置:
+Bukkit/Spigot: `plugins/AntiAttackRL/config.yml`
+BungeeCord: `plugins/AntiAttackRL/config.yml`
+Sponge7: `config/anti_attack_reload/config.yml`
+Sponge8: `config/AntiAttackRL/config.yml`
+Velocity: `plugins/anti_attack_reload/config.yml`
 ```yaml
 AntiAttack:
   AutoUpdate: false  #自动更新
@@ -135,16 +138,16 @@ Versioning: 425    #插件版本号
 ```
 ## 指令
 **/aat** 主命令
-help 查询插件帮助
-reload 重载插件
-rm 戒备模式手动操作
-* add <玩家名字> 填入记录单
-* remove <玩家名字> 移出记录单
-* start 立即开启戒备模式
-* stop 立即关闭戒备模式
-packetTrack (*/玩家) 包追踪所有/限定
+- help 查询插件帮助
+- reload 重载插件
+- rm 戒备模式手动操作
+  * add <玩家名字> 填入记录单
+  * remove <玩家名字> 移出记录单
+  * start 立即开启戒备模式
+  * stop 立即关闭戒备模式
+- packetTrack (*/玩家) 包追踪所有/限定 _(仅Bukkit/Proxy支持)_
 
-权限只有一个：AntiAttack.admin
+权限只有一个：`AntiAttack.admin`
 # Download & Issues
 [Releases](https://github.com/AntiAttackMC/AATRL_Public/releases)
 <br>
