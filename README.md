@@ -2,18 +2,7 @@
 # AntiAttackRL插件介绍
 ![LOGO](https://github.com/AntiAttackMC/AATRL_Public/assets/141195321/a132cebe-2a95-4344-868a-955a4c81a78b)
 **AntiAttackRL**是一款免费、可靠、更新频繁、多平台的压测防御插件，可以有效地防御绝大多数的压测攻击，并且服务器被压测时玩家依然能够正常进服，同时也是唯一一款支持 Sponge 、 Folia 和ShreddedPaper 的反压测插件。
-## Dev-V425更新内容
-以下更新标识含义: <br>
-+:新增<br>
--:移除<br>
-X:Bug修复<br>
-*:重要修改<br>
-\~:代码优化/变动<br>
-<br>
-<br>
-[X] 修复了控制台染色功能<br>
-[*] 更改了前置插件为PacketEvents<br>
-### 特性
+## 特性
 * 防御MOTD 压测 / MOTD 集群压测
 * 防御Ping 压测 / Ping 集群压测
 * 防御假人压测 / 集群假人压测
@@ -28,7 +17,7 @@ X:Bug修复<br>
 * 插件可自动更新 *
 * 可高度自定义的配置文件
 * 可以自定义发包规则限制
-### 优势
+## 优势
 |AntiAttack3 |	AntiAttackRL	|其他同类防御插件|
 | -----------|----------------|-----------------|
 |老牌，早在集群压测发迹之前便已发布更新，经验丰富。但正因如此，代码累赘|	AAT 重制版，过往的经验使得 AATRL 在抵抗压测的熟练度上更上一层楼	| 很多时候都是第一次写反压测插件，对压测不熟悉，效果不好
@@ -42,14 +31,14 @@ X:Bug修复<br>
 5. 修复了大部分的 Bug ，包括尽管假人进不来仍然在刷屏的问题，同时修复了几个上古时代就存在的 Bug 。
 6. 更强的自定义，几乎所有玩家提示信息都可以自定义了，插件前缀也可以自定义了，所有数值都可以手动调整
 7. 针对和高效的更新，几乎可以抵抗最新的压测，并配有一劳永逸的自动更新系统*。
-### 首次安装教程（必看）
-#### Bukkit / Spigot纯净服安装方法
+## 首次安装教程（必看）
+### Bukkit / Spigot纯净服安装方法
 1. 确保装有前置: Protocolib
 2. 下载好插件: AntiAttackRL-[版本号].jar
 3. 将插件置入plugins文件夹中
 4. 重启时，服务器可能会进行初始化，玩家数据越多，时间越长
 5. 若效果不好，请查阅下方的配置文件讲解对配置文件进行修改
-#### BungeeCord蹦极服安装方法
+### BungeeCord蹦极服安装方法
 **若你的服务器未处于被攻击时:**
 1. 下载插件: AntiAttackRL-[版本号].jar
 2. 将其置入BC中的plugins文件夹中
@@ -61,12 +50,12 @@ X:Bug修复<br>
 3. 重启你的登录服，等待初始化结束
 4. 将位于登录服plugins中的AntiAttackRLjar和AntiAttack文件夹一起挪到BC的plugins里5.重启BC即呵生效
 6. 若效果不好，请查阅下方的配置文件讲解对配置文件进行修改
-#### Sponge纯净/模组服安装方法
+### Sponge纯净/模组服安装方法
 1. 下载插件: AntiAttackRL-[版本号].jar
 2. 将其置入服务端的mods或mods\1.12.2或mods\plugins文件夹中
 3. 重启服务端，重启时插件可能会进行初始化，玩家数据越多,时间越长
 4. 若效果不好，请查阅下方的配置文件讲解对配置文件进行修改
-### 配置文件
+## 配置文件
 本插件在任何服务端(Bukkit/Spigot/Paper/KCauldron/CarServer/Mohist/Bungee/Sponge)下运行时，
 其配置文件格式均相同，格式为Yaml。在同版本插件下各个选项也完全相同，文件位置可能不同。
 配置文件位置:（老版本为AntiAttackRL/AntiAttack文件夹）
@@ -144,7 +133,7 @@ ServerInLimitTime:   #大厅踢出
   enable: true
 Versioning: 425    #插件版本号
 ```
-### 指令
+## 指令
 **/aat** 主命令
 help 查询插件帮助
 reload 重载插件
@@ -158,3 +147,6 @@ packetTrack (*/玩家) 包追踪所有/限定
 权限只有一个：AntiAttack.admin
 # Download & Issues
 [Releases](https://github.com/AntiAttackMC/AATRL_Public/releases)
+> [!WARNING]
+> 如果在更新检测时遇到了类似`javax.net.ssl.SSLHandshakeException`的错误，是你网络不好连不上GitHub
+> **不要给我开issue或反馈，一概关闭/拒收！**
