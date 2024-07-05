@@ -60,11 +60,11 @@
 本插件在任何**上方明文支持的服务端**运行时<br>
 其配置文件格式相同，均为Yaml。在同版本插件下各个选项也完全相同，**但文件位置不同**。<br>
 配置文件位置:<br>
-Bukkit/Spigot: `plugins/AntiAttackRL/config.yml` <br>
-BungeeCord: `plugins/AntiAttackRL/config.yml` <br>
-Sponge7: `config/anti_attack_reload/config.yml` <br>
-Sponge8: `config/AntiAttackRL/config.yml` <br>
-Velocity: `plugins/anti_attack_reload/config.yml` <br>
+- BukkitAPI _(Spigot、Paper、Mohist等)_: `plugins/AntiAttackRL/config.yml` <br>
+- BungeeCord: `plugins/AntiAttackRL/config.yml` <br>
+- Sponge7: `config/anti_attack_reload/config.yml` <br>
+- Sponge8: `config/AntiAttackRL/config.yml` <br>
+- Velocity: `plugins/anti_attack_reload/config.yml` <br>
 ```yaml
 AntiAttack:
   AutoUpdate: false  #自动更新
