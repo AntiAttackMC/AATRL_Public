@@ -1,4 +1,4 @@
-***如果你有任何疑问或提交bug，请发送Issues或到Q群580659670寻求帮助***
+***如果你有任何疑问或提交bug，请发送Issues或到Q群`580659670`寻求帮助***
 # AntiAttackRL插件介绍
 ![LOGO](https://github.com/AntiAttackMC/AATRL_Public/assets/141195321/a132cebe-2a95-4344-868a-955a4c81a78b)
 **AntiAttackRL**是一款免费、可靠、更新频繁、多平台的压测防御插件，可以有效地防御绝大多数的压测攻击，并且服务器被压测时玩家依然能够正常进服，同时也是唯一一款支持 Sponge 、 Folia 和ShreddedPaper 的反压测插件。
