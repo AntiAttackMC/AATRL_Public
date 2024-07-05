@@ -57,8 +57,8 @@
 3. 重启服务端，重启时插件可能会进行初始化，玩家数据越多,时间越长
 4. 若效果不好，请查阅下方的配置文件讲解对配置文件进行修改
 ## 配置文件
-本插件在任何服务端 _(Bukkit/Spigot/Paper/KCauldron/CarServer/Mohist/Bungee/Sponge)_ 下运行时，
-其配置文件格式均相同，格式为Yaml。在同版本插件下各个选项也完全相同，文件位置可能不同。
+本插件在任何**上方明文支持的服务端**运行时，
+其配置文件格式相同，均为Yaml。在同版本插件下各个选项也完全相同，**但文件位置不同**。
 配置文件位置:
 Bukkit/Spigot: `plugins/AntiAttackRL/config.yml` <br>
 BungeeCord: `plugins/AntiAttackRL/config.yml` <br>
