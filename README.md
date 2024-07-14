@@ -87,7 +87,7 @@ AntiMOTDAttack: #防MOTD压测
   PerIP5sLimit: 10     #同一IP5秒最多请求次数
   Total5sLimit: 100      #全服5秒最多请求次数
   enable: true
-AntiPacketFloodAttack: #自定义包规则限制
+AntiPacketFloodAttack: #防止发包洪水攻击
   KickMessage: §c%key_packet%发包量过多,已超出上限踢出值!§b[APFA]
   PacketLimit:
     PluginMessage:MC[|]BEdit:\S*:      #包名
@@ -113,16 +113,16 @@ AntiTabCompleteAttack:    #防止tab攻击
   TotalInterval: 100
   enable: true
 Debug: false     #Debug模式
-HandShakeLimiter:     #握手
+HandShakeLimiter:     #握手次数限制
   PerIPSecondLimit: 3
   enable: true
-LoggerFilter:       #防止后台刷屏-将会删除
+LoggerFilter:       #防止日志刷屏-将会删除
   enable: true
   exceptions:
   - io.netty.handler.codec.DecoderException
   - io.netty.handler.codec.CorruptedFrameException
-RestrictMode:   #反压测模式
-  Timer:
+RestrictMode:   #反压测模式（戒备模式）
+  Timer:             #阈值，超出将会触发反压测
     CountLimit: 1    #计数限制
     CountPeriod: 5    #计数周期
     DenyMessage: §c服务器遭到集群压测,请稍等再登录!§b[RMTR]
@@ -130,11 +130,11 @@ RestrictMode:   #反压测模式
 ServerInLimitTime:   #大厅踢出
   KickMessage: §c你在大厅服务器里面待太久了，请重新进入服务器
   LobbyServers:     #大厅服务器名称
-  - lobby1
+  - lobby1    
   - lobby2
-  StaySeconds: 30   #踢出时间
+  StaySeconds: 30   #踢出时间（单位：秒）
   enable: true
-Versioning: 425    #插件版本号
+Versioning: 425    #插件版本号（请勿修改）
 ```
 ## 指令
 **/aat** 主命令
