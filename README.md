@@ -148,8 +148,15 @@ Versioning: 425    #插件版本号（请勿修改）
 - packetTrack (*/玩家) 包追踪所有/限定 _(仅Bukkit/Proxy支持)_
 
 权限只有一个：`AntiAttack.admin`
+## 踢出后缀
+> [ACSA] 发包异常，如正常情况下被踢出请检查发包限制的设置 <br>
+> [AFJ] 登陆频繁，如果误报请尝试调低防止快速加入的阈值<br>
+> [AKA] 有同名玩家在线，通常是网络不佳或TPS过低导致的误报<br>
+> [APFA] 发包速度太快，通常是R键整理等mod导致<br>
+> [RMTR] 服务器正在受到集群压测，误报请检查反压测模式下阈值<br>
+
 # Download & Issues
-[Releases](releases/)
+请到 [Releases](releases/) 处下载最新版本
 <br>
 > [!WARNING]
 > 如果在更新检测时遇到了类似`javax.net.ssl.SSLHandshakeException`的错误，是你网络不好连不上GitHub <br>
