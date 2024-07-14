@@ -39,17 +39,17 @@
 4. 重启时，服务器可能会进行初始化，玩家数据越多，时间越长
 5. 若效果不好，请查阅下方的配置文件讲解对配置文件进行修改
 ### Proxy代理端 _(如BungeeCord、Velocity)_ 及其分支 _(如WaterFall等)_ 安装方法
-**若你的服务器未处于被攻击时:**
+####若你的服务器未处于被攻击时:
 1. 下载插件: `AntiAttackRL-[版本号].jar`
 2. 将其置入Proxy端中的`plugins`文件夹中
 3. 重启服务端即可生效
 4. 若效果不好，请查阅下方的配置文件讲解对配置文件进行修改
 
-**若你的Proxy服务端正处于被攻击时:**
+####若你的Proxy服务端正处于被攻击时:
 1. 下载插件: `AntiAttackRL-[版本号].jar`
 2. 先将其置入你的任一**非登录服**中的`plugins`文件夹中
 3. 重启这个子服，等待初始化结束
-4. 将位于该子服`plugins`中的`AntiAttackRL.jar`和`AntiAttack文件夹`一起挪到**Proxy端**的`plugins`里
+4. 将位于该子服`plugins`中的`AntiAttackRL.jar`和`AntiAttackRL文件夹` _`(或anti_attack_reload文件夹)`_ 一起挪到**Proxy端**的`plugins`里
 5. 重启服务端即可生效
 6. 若效果不好，请查阅下方的配置文件讲解对配置文件进行修改
 ### Sponge安装方法
