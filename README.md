@@ -150,7 +150,7 @@ Versioning: 425    #插件版本号（请勿修改）
   * remove <玩家名字> 移出记录单
   * start 立即开启戒备模式
   * stop 立即关闭戒备模式
-- packetTrack (*/玩家) 包追踪所有/限定 _(仅Bukkit/Proxy支持)_
+- packetTrack (*/玩家) 包追踪所有/限定 _(仅Bukkit/Proxy支持   关闭直接输入/aat packetTrack)_ 
 
 权限只有一个：`AntiAttack.admin`
 ## 踢出后缀
@@ -161,8 +161,14 @@ Versioning: 425    #插件版本号（请勿修改）
 > [RMTR] 服务器正在受到集群压测，误报请检查反压测模式下阈值<br>
 
 ## 自定义包规则限制
-> 等我素材找完了在更新
-
+> [!tip]
+> 这部分内容并不是你一定需要理解的，而且也有一定难度。
+1. 输入/aat packetTrack (*/玩家) 启动包监听模式
+2. 此时你就可以开着 作弊端 | 修改器 | 攻击软件 进入服务器
+   此时后台会不断输出包类型，共有以下几种:
+   ![QQ图片20240721074833](https://github.com/user-attachments/assets/5ecf013f-a3fd-441c-9802-66cefed64cdd)
+   ![QQ图片20240721075845](https://github.com/user-attachments/assets/bfd4b652-0caa-4837-84ca-39d06bf5dcf0)
+4. 未完待续
 
 # Download & Issues
 请到 [Releases](releases/) 处下载最新版本
