@@ -175,5 +175,4 @@ Versioning: 425    #插件版本号（请勿修改）
 <br>
 > [!WARNING]
 > 如果在更新检测时遇到了类似`javax.net.ssl.SSLHandshakeException`的错误，是你网络不好连不上GitHub <br>
-> 关闭配置文件中的`CheckUpdate`即可解决
 > **不要给我开issue或反馈，一概关闭/拒收！**
