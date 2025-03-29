@@ -4,13 +4,13 @@
 **AntiAttackRL**是一款免费、可靠、更新频繁、多平台的压测防御插件，可以有效地防御绝大多数的压测攻击，同时也是唯一一款能够**同时**支持几乎所有服务端的反压测插件<br>
 
 **BukkitAPI 系列**<br>
-`Spigot` 及其分支（如 `Paper`、`Purpur` 等）<br>
-`Hybrid` 混合服务端<br>
-新式多线程服务端（如 `Folia` 、 `ShreddedPaper`）<br>
+_Spigot_ 及其分支（如 _Paper_、_Purpur_ 等）<br>
+_Hybrid_ 混合服务端<br>
+新式多线程服务端（如 _Folia_ 、 _ShreddedPaper_）<br>
 **Proxy 系列**<br>
-`BungeeCord`、`Velocity`、`Waterfall`<br>
+_BungeeCord_ 、_Velocity_、_Waterfall_ <br>
 **Sponge 系列**<br>
-`Sponge7`、`Sponge8`<br>
+_Sponge7_ 、_Sponge8_ <br>
 
 ## 特性
 * 防御 MOTD _(集群)_ 压测
