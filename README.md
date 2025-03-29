@@ -1,7 +1,17 @@
 ***如果你有任何疑问，或提交bug: 请发送[Issues](issues/)，或到Q群[`580659670`](https://qm.qq.com/q/gya17AyEyQ)寻求帮助***
-# AntiAttackRL插件介绍
+# AntiAttackRL插 件 介 绍
 ![LOGO](https://github.com/AntiAttackMC/AATRL_Public/assets/141195321/a132cebe-2a95-4344-868a-955a4c81a78b)
-**AntiAttackRL**是一款免费、可靠、更新频繁、多平台的压测防御插件，可以有效地防御绝大多数的压测攻击，并且服务器被压测时玩家依然能够正常进服，同时也是唯一一款能够**同时**支持`BukkitAPI`|`Proxy端`|`Sponge`|`Folia`|`ShreddedPaper` 及它们的分支 的反压测插件。
+**AntiAttackRL**是一款免费、可靠、更新频繁、多平台的压测防御插件，可以有效地防御绝大多数的压测攻击，同时也是唯一一款能够**同时**支持几乎所有服务端的反压测插件<br>
+
+**BukkitAPI 系列**<br>
+`Spigot` 及其分支（如 `Paper`、`Purpur` 等）<br>
+`Hybrid` 混合服务端<br>
+新式多线程服务端（如 `Folia` 、 `ShreddedPaper`）<br>
+**Proxy 系列**<br>
+`BungeeCord`、`Velocity`、`Waterfall`<br>
+**Sponge 系列**<br>
+`Sponge7`、`Sponge8`<br>
+
 ## 特性
 * 防御 MOTD _(集群)_ 压测
 * 防御 Ping _(集群)_ 压测
