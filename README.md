@@ -1,7 +1,6 @@
 ![LOGO](https://github.com/AntiAttackMC/AATRL_Public/assets/141195321/a132cebe-2a95-4344-868a-955a4c81a78b)
 ***如果你有任何疑问，或提交bug: 请发送[Issues](issues/)，或到Q群[`580659670`](https://qm.qq.com/q/gya17AyEyQ)寻求帮助***
 # AntiAttackRL插 件 介 绍
-[![Stars](https://img.shields.io/docker/stars/jenkins/jenkins.svg)](https://github.com/AntiAttackMC/AATRL_Public)
 **AntiAttackRL**是一款免费、可靠、更新频繁、多平台的压测防御插件，可以有效地防御绝大多数的压测攻击，同时也是唯一一款能够**同时**支持几乎所有服务端的反压测插件<br>
 
 <details>
