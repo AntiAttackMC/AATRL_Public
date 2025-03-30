@@ -51,6 +51,7 @@
 7. 针对和高效的更新，几乎可以抵抗最新的压测，并配有一劳永逸的自动更新系统*。
 
 ## 首次安装教程（必看）
+
 ### 实现BukkitAPI的服务端 _(包括Spigot及其分支、各类Hybrid混合服务端、Folia、ShreddedPaper等)_ 安装方法
 1. 确保装有前置: `ProtocoLib`
 2. 下载好插件: `AntiAttackRL-[版本号].jar`
@@ -86,6 +87,10 @@
 - Sponge7: `config/anti_attack_reload/config.yml` <br>
 - Sponge8: `config/AntiAttackRL/config.yml` <br>
 - Velocity: `plugins/anti_attack_reload/config.yml` <br>
+
+<details>
+<summary>点击查看配置文件</summary>
+
 ```yaml
 AntiAttack:
   AutoUpdate: false  #自动更新
@@ -157,6 +162,9 @@ ServerInLimitTime:   #大厅踢出
   enable: true
 Versioning: 425    #插件版本号（请勿修改）
 ```
+
+</details>
+
 ## 指令
 **/aat** 主命令
 - help 查询插件帮助
