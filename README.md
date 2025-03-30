@@ -98,7 +98,7 @@
 - Sponge8: `config/AntiAttackRL/config.yml` <br>
 - Velocity: `plugins/anti_attack_reload/config.yml` <br>
 
-<details>
+<details open>
 <summary>点击查看配置文件</summary>
 
 ```yaml
@@ -201,9 +201,16 @@ Versioning: 425    #插件版本号（请勿修改）
 1. 输入/aat packetTrack (*/玩家) 启动包监听模式
 2. 此时你就可以开着 作弊端 | 修改器 | 攻击软件 进入服务器
    此时后台会不断输出包类型，共有以下几种:
+   
+   <details>
+     
    ![QQ图片20240721074833](https://github.com/user-attachments/assets/5ecf013f-a3fd-441c-9802-66cefed64cdd)
    ![QQ图片20240721075845](https://github.com/user-attachments/assets/bfd4b652-0caa-4837-84ca-39d06bf5dcf0)
-4. 未完待续
+
+   </details>
+
+   
+4. 其中有 `PacketClassName:` 、 `PacketID:` 等。它们代表了不同的平台
 
 # Download & Issues
 请到 [Releases](releases/) 处下载最新版本
