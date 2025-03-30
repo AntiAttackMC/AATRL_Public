@@ -1,31 +1,54 @@
-***如果你有任何疑问，或提交bug: 请发送[Issues](issues/)，或到Q群[`580659670`](https://qm.qq.com/q/gya17AyEyQ)寻求帮助***
-# AntiAttackRL插件介绍
+***如果你有任何疑问，或提交bug: 请发送[Issues](issues/)，或到Q群[`580659670`](https://qm.qq.com/q/gya17AyEyQ)寻求帮助，使用前请务必阅读[首次安装教程必看](#首次安装教程必看)***
 ![LOGO](https://github.com/AntiAttackMC/AATRL_Public/assets/141195321/a132cebe-2a95-4344-868a-955a4c81a78b)
-**AntiAttackRL**是一款免费、可靠、更新频繁、多平台的压测防御插件，可以有效地防御绝大多数的压测攻击，并且服务器被压测时玩家依然能够正常进服，同时也是唯一一款能够**同时**支持`BukkitAPI`|`Proxy端`|`Sponge`|`Folia`|`ShreddedPaper` 及它们的分支 的反压测插件。
-## 特性
-* 防御 MOTD _(集群)_ 压测
-* 防御 Ping _(集群)_ 压测
-* 防御 假人 _(集群)_ 压测
-* 防御 Tab 包高频攻击
-* 防御 Move 包高频攻击
-* 防御连点器发包崩溃漏洞
-* 防御踢人漏洞压测攻击
-* 防御频繁握手多连接攻击
-* 防御洪水 Book 包攻击
-* 防御死亡 Motd / Ping 发包攻击
-* 不会阻隔正常玩家进入服务器
-* 插件可自动更新 *
-* 可高度自定义的配置文件
-* 可以自定义发包规则限制
+# AntiAttackRL插 件 介 绍
+**AntiAttackRL**是一款免费、可靠、更新频繁、多平台的压测防御插件，可以有效地防御绝大多数的压测攻击，同时也是唯一一款能够**同时**支持几乎所有服务端的反压测插件<br>
+
+<details>
   
+  <summary>查看支持的版本</summary>
+  
+  **BukkitAPI 系列**<br>
+  * _Spigot_ 及其分支（如 _Paper_、_Purpur_ 等）<br>
+  * _Hybrid_ 混合服务端<br>
+  * 新式多线程服务端（如 _Folia_ 、 _ShreddedPaper_）<br>
+  
+  **Proxy 系列**<br>
+  * _BungeeCord_ 、_Velocity_、_Waterfall_ <br>
+  
+  **Sponge 系列**<br>
+  * _Sponge7_ 、_Sponge8_ <br>
+
+</details>
+
 ## 优势
+<details>
+  
+  <summary>特性</summary>
+    
+  * 防御 MOTD _(集群)_ 压测
+  * 防御 Ping _(集群)_ 压测
+  * 防御 假人 _(集群)_ 压测
+  * 防御 Tab 包高频攻击
+  * 防御 Move 包高频攻击
+  * 防御连点器发包崩溃漏洞
+  * 防御踢人漏洞压测攻击
+  * 防御频繁握手多连接攻击
+  * 防御洪水 Book 包攻击
+  * 防御死亡 Motd / Ping 发包攻击
+  * 不会阻隔正常玩家进入服务器
+  * 插件可自动更新 *
+  * 可高度自定义的配置文件
+  * 可以自定义发包规则限制
+
+</details>
+
 |AntiAttack3 |	AntiAttackRL	|其他同类防御插件|
 | -----------|----------------|-----------------|
 |老牌，早在集群压测发迹之前便已发布更新，经验丰富。但正因如此，代码累赘|	AAT 重制版，过往的经验使得 AATRL 在抵抗压测的熟练度上更上一层楼	| 很多时候都是第一次写反压测插件，对压测不熟悉，效果不好
 戒备模式有很大问题，刚开服的几秒内压测会大量进入，被 EMP (新型压测软件)针对，难以抵抗袭击 |	全新的戒备模式算法,全新的代码,全新的机制，针对集群压测和各种新型攻击手段，具有卓越的防御效果	| 部分插件是上古时期发布的，它们对集群压测没有太大的抵抗力。其余插件对压测攻击具有防御效果，但对很多新型压测攻击几乎没有免疫力。
 成群的 Bug ，不人性化的配置文件，公告信息，误报率在配置不正确下惊人，默认配置经常导致各种问题 |	默认配置便可以使用，误报率极低，近无 Bug ，作者即刻在线反馈修复	| 可能有几个月甚至几年没有进行过大更新
 
-### 相对于老版 AntiAttack3 的改动
+#### 相对于老版 AntiAttack3 的改动
 1. 完全重写，没有半点代码来自于 AntiAttack3 ，也就没有修改一说了，不过为了使得大家容易理解，仍然对此进行解释。
 2. 戒备模式的全新算法！杜绝了刚开服成群玩家进不去或者成群压测进得去，解决了压测持续时间长便可以逐步透过戒备模式的墙的能力，支持开服便初始化戒备模式列表,不再需要提前记录和结算。
 3. 去掉了大部分逗比的耍小聪明的检测，那些检测对上古有效，但对于新的压测几乎没有什么抵抗力，还会导致误报率奇高。
@@ -35,6 +58,10 @@
 7. 针对和高效的更新，几乎可以抵抗最新的压测，并配有一劳永逸的自动更新系统*。
 
 ## 首次安装教程（必看）
+
+> [!important]
+> 请务必安装本教程安装，否则可能导致插件不起作用！
+
 ### 实现BukkitAPI的服务端 _(包括Spigot及其分支、各类Hybrid混合服务端、Folia、ShreddedPaper等)_ 安装方法
 1. 确保装有前置: `ProtocoLib`
 2. 下载好插件: `AntiAttackRL-[版本号].jar`
@@ -70,6 +97,10 @@
 - Sponge7: `config/anti_attack_reload/config.yml` <br>
 - Sponge8: `config/AntiAttackRL/config.yml` <br>
 - Velocity: `plugins/anti_attack_reload/config.yml` <br>
+
+<details open>
+<summary>点击查看配置文件</summary>
+
 ```yaml
 AntiAttack:
   AutoUpdate: false  #自动更新
@@ -141,6 +172,9 @@ ServerInLimitTime:   #大厅踢出
   enable: true
 Versioning: 425    #插件版本号（请勿修改）
 ```
+
+</details>
+
 ## 指令
 **/aat** 主命令
 - help 查询插件帮助
@@ -159,6 +193,7 @@ Versioning: 425    #插件版本号（请勿修改）
 > [AKA] 有同名玩家在线，通常是网络不佳或TPS过低导致的误报<br>
 > [APFA] 发包速度太快，通常是R键整理等mod导致<br>
 > [RMTR] 服务器正在受到集群压测，误报请检查反压测模式下阈值<br>
+> [SILT] 在大厅服务器滞留太长时间，留意配置文件中ServerInLimitTime的设置<br>
 
 ## 自定义包规则限制
 > [!tip]
@@ -166,9 +201,16 @@ Versioning: 425    #插件版本号（请勿修改）
 1. 输入/aat packetTrack (*/玩家) 启动包监听模式
 2. 此时你就可以开着 作弊端 | 修改器 | 攻击软件 进入服务器
    此时后台会不断输出包类型，共有以下几种:
+   
+   <details>
+     
    ![QQ图片20240721074833](https://github.com/user-attachments/assets/5ecf013f-a3fd-441c-9802-66cefed64cdd)
    ![QQ图片20240721075845](https://github.com/user-attachments/assets/bfd4b652-0caa-4837-84ca-39d06bf5dcf0)
-4. 未完待续
+
+   </details>
+
+   
+4. 其中有 `PacketClassName:` 、 `PacketID:` 等。它们代表了不同的平台
 
 # Download & Issues
 请到 [Releases](releases/) 处下载最新版本
