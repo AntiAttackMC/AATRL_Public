@@ -8,13 +8,15 @@
   <summary>查看支持的版本</summary>
   
   **BukkitAPI 系列**<br>
-  _Spigot_ 及其分支（如 _Paper_、_Purpur_ 等）<br>
-  _Hybrid_ 混合服务端<br>
-  新式多线程服务端（如 _Folia_ 、 _ShreddedPaper_）<br>
+  * _Spigot_ 及其分支（如 _Paper_、_Purpur_ 等）<br>
+  * _Hybrid_ 混合服务端<br>
+  * 新式多线程服务端（如 _Folia_ 、 _ShreddedPaper_）<br>
+  
   **Proxy 系列**<br>
-  _BungeeCord_ 、_Velocity_、_Waterfall_ <br>
+  * _BungeeCord_ 、_Velocity_、_Waterfall_ <br>
+  
   **Sponge 系列**<br>
-  _Sponge7_ 、_Sponge8_ <br>
+  * _Sponge7_ 、_Sponge8_ <br>
 
 </details>
 
@@ -191,6 +193,7 @@ Versioning: 425    #插件版本号（请勿修改）
 > [AKA] 有同名玩家在线，通常是网络不佳或TPS过低导致的误报<br>
 > [APFA] 发包速度太快，通常是R键整理等mod导致<br>
 > [RMTR] 服务器正在受到集群压测，误报请检查反压测模式下阈值<br>
+> [SILT] 在大厅服务器滞留太长时间，留意配置文件中ServerInLimitTime的设置<br>
 
 ## 自定义包规则限制
 > [!tip]
