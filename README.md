@@ -164,7 +164,7 @@ RestrictMode:   #反压测模式（戒备模式）
     DenyMessage: §c服务器遭到集群压测,请稍等再登录!§b[RMTR]
   enable: true
 ServerInLimitTime:   #大厅踢出
-  KickMessage: §c你在大厅服务器里面待太久了，请重新进入服务器
+  KickMessage: §c你在大厅服务器里面待太久了，请重新进入服务器§b[SILT]
   LobbyServers:     #大厅服务器名称
   - lobby1    
   - lobby2
