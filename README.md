@@ -108,45 +108,43 @@ AntiAttack:
     enable: true    #聊天栏提示
     period: 10       #间隔
   CheckUpdate: true #检查更新
-  PluginPrefix: §b§l[AntiAttackRL]   #插件提示前缀
+  PluginPrefix: "§b§l[AntiAttackRL] "  #插件提示前缀
 AntiCreativeSlotAttack:   #防止非法发包
   KickMessage: §c非法发包!怀疑你在攻击服务器,请重新登录§b[ACSA]
   enable: true
-AntiFastJoin: #防止快速加入
+AntiFastJoin: #防止单IP快速加入
   DenyMessage: §c你加入过于频繁了!请稍等几秒!§b[AFJ]
-  Interval: 4000    #检测间隔
+  Interval: 4000    #同一IP间隔多长时间允许进一个人，单位毫秒
   enable: true
-AntiKickAttack: #防止把玩家顶掉线
+AntiKickAttack: #防御影分身Bug
   DenyMessage: §c有一个同名玩家已经在线了!§b[AKA]
   enable: true
 AntiMOTDAttack: #防MOTD压测
-  PerIP5sLimit: 10     #同一IP5秒最多请求次数
-  Total5sLimit: 100      #全服5秒最多请求次数
+  PerIP5sLimit: 10       #同一IP，5秒内最多请求次数
+  Total5sLimit: 100      #全服5秒内最多请求次数
   enable: true
-AntiPacketFloodAttack: #防止发包洪水攻击
+AntiPacketFloodAttack:   #自定义包规则防御
   KickMessage: §c%key_packet%发包量过多,已超出上限踢出值!§b[APFA]
+  enable: true   #是否开启
   PacketLimit:
-    PluginMessage:MC[|]BEdit:\S*:      #包名
-      kick: 1                               
-      period: 2000
-      share: true
-    PluginMessage:MC[|]BSign:\S*:
-      kick: 1
-      period: 2000
-      share: true
-    PluginMessage:\S*: ACCEPT
-    '[\s\S]*':
-      cancel: 25
-      period: 500
-      share: false
-  enable: true
+    \S*:            #包名，是正则表达式，如果多重匹配，则取最下面的那个
+      period: 500   #间隔时间，单位辜秒
+      cancel: 25    #在间隔时间内，允许发送此包多少个，超出限制会被拒绝
+      share: false  #是否与其它数据包共享计数
+    PluginMessage:MC[]BSign:1:       #包名，由于是正则表达式，所以|这种特殊字符要用门括起来
+      period: 1000
+      cancel: 1
+    PluginMessage:MC[]BEdit:1:
+      period: 1000
+      cancel: 1
+    PluginMessage:dragoncore:S*:CANCEL    #如果直接写不写下面几行就写个英文单词就意味着是粗暴模式，CANCEL代表此包会永远拦截，ACCEPT代表此包永远不拦截，KICK代表只要接受到此包就直接踢出去
 AntiPingAttack:   #ping攻击防御
-  PerIPInterval: 500   #阈值
-  TotalInterval: 50
+  PerIPInterval: 500   #同一IP间隔多少毫秒允许ping一次
+  TotalInterval: 50    #全服间隔多少亳秒允许ping一次
   enable: true
-AntiTabCompleteAttack:    #防止tab攻击
-  PerIPInterval: 1000     #阈值
-  TotalInterval: 100
+AntiTabCompleteAttack:    #防止tab攻击，只需要低版本(1.12及以下)启用，高版本(1.13+)不需要启用，因为Tab机制改变了
+  PerIPInterval: 1000     #同一IP间隔多少毫秒允许发送-次TAB请求
+  TotalInterval: 100      #全服间隔多少毫秒允许发送-次TAB请求
   enable: true
 Debug: false     #Debug模式
 HandShakeLimiter:     #握手次数限制
@@ -157,20 +155,20 @@ LoggerFilter:       #防止日志刷屏-将会删除
   exceptions:
   - io.netty.handler.codec.DecoderException
   - io.netty.handler.codec.CorruptedFrameException
-RestrictMode:   #反压测模式（戒备模式）
-  Timer:             #阈值，超出将会触发反压测
+RestrictMode:   #反压测模式(戒备模式)
+  Timer:             #阈值，在CountPeriod秒内允许CountLimit个新玩家进入服务器，超出限制则会拦截
     CountLimit: 1    #计数限制
     CountPeriod: 5    #计数周期
     DenyMessage: §c服务器遭到集群压测,请稍等再登录!§b[RMTR]
   enable: true
-ServerInLimitTime:   #大厅踢出
+ServerInLimitTime:   #玩家需要在进服后指定时间内从登录服跳转走，仅在Proxy服务端有效
   KickMessage: §c你在大厅服务器里面待太久了，请重新进入服务器§b[SILT]
   LobbyServers:     #大厅服务器名称
   - lobby1    
   - lobby2
   StaySeconds: 30   #踢出时间（单位：秒）
   enable: true
-Versioning: 425    #插件版本号（请勿修改）
+Versioning: 425    #插件版本号(请勿修改)
 ```
 
 </details>
