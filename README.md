@@ -5,7 +5,7 @@
 
 <details>
   
-  <summary>查看支持的版本</summary>
+  <summary>查看支持的核心</summary>
   
   **BukkitAPI 系列**<br>
   * _Spigot_ 及其分支（如 _Paper_、_Purpur_ 等）<br>
